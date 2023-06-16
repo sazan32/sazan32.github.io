@@ -42,9 +42,9 @@
             <li class="is-active"><span>Home</span></li>
             <li><span>Intro</span></li>
             <li><span>Development</span></li>            
-            <li><span>Our Project Advisor</span></li>
+            <li><span>Our Advisor</span></li>
             <li><span>Our Team</span></li>                  
-            <li><span>About Us</span></li>
+            <li><span>Live Demo</span></li>
           </ul>
         </nav>
         <ul class="l-main-content main-content">
@@ -87,24 +87,26 @@
             <div class="contact">
               <div class="contact--lockup">
                 <div class="modal">
-                    <p>
+                    <p style="text-align: left;">
 
                       The main goal of the project is to implement an obfuscation tool to prevent static program analysis of applications, in order to thwart (or delay) reverse engineering of software. 
+                      <br>
+                      In static program analysis, the code is mostly reviewed by a human, and not executed. The common methods for this are disassembly and decompilation of executable files. 
+                      <br>
+                      Reverse engineering of software poses a great risk for organizations of various needs. 
+                      Some of these are:<br>
+                      * The loss of intellectual property (the implementation details, etc.)<br>
+                      * Countering of licensing mechanisms in order to crack proprietary software (by means of patching checks or developing license key generating software)<br>
+                      * Development of cheats for games (especially online games)<br>
 
-In static program analysis, the code is mostly reviewed by a human, and not executed. The common methods for this are disassembly and decompilation of executable files. 
+                      Static analysis is not the only method for reverse engineering software. Dynamic analysis is another method,
+                       which involves execution of the program (or parts of it) in controlled environments, in order to observe how it behaves. <br>
+                       <br>
+                       <b>Dynamic analysis and countermeasures are out of scope for this project.</b><br>
+                      <br>  
+                       Our goal is to develop an obfuscator that transforms the original program into a more complex program, without interfering with the original function. <br>
 
-Reverse engineering of software poses a great risk for organizations of various needs. 
-Some of these are:
-the loss of intellectual property (the implementation details, etc.)
-countering of licensing mechanisms in order to crack proprietary software (by means of patching checks or developing license key generating software (keygen) )
-development of cheats for games (especially online games)
-
-Static analysis is not the only method for reverse engineering software. Dynamic analysis is another method, which involves execution of the program (or parts of it) in controlled environments, in order to observe how it behaves. 
-
-Dynamic analysis and countermeasures are out of scope for this project.
-
-
-Our goal is to develop an obfuscator that transforms the original program into a more complex program, without interfering with the original function. This is a challenging task, since our tool will have to analyze non-obfuscated programs, and make a mess while keeping the integrity. From the ordinary user’s perspective, nothing must change. But the potential reverse engineering attempt should be as difficult as can be. 
+                      This is a challenging task, since our tool will have to analyze non-obfuscated programs, and make a mess while keeping the integrity. From the ordinary user’s perspective, nothing must change. But the potential reverse engineering attempt should be as difficult as can be. 
 
 Reverse engineering of software can never be completely prevented, since a CPU will have to execute code without errors, and that code will be available for the reverse engineer. But, obfuscation proves itself useful, the skill required for reversing obfuscated code is higher, and it will definitely consume more time and resources, and might render the attempt non-viable.
 
@@ -120,9 +122,19 @@ Reverse engineering of software can never be completely prevented, since a CPU w
             <div class="contact">
               <div class="contact--lockup">
                 <div class="modal">
-                    <p>
+                    <p style="text-align: left;">
 
-                     The Development Process
+                     Whilst developing this project, <br>
+                     * We made use of <a href="https://github.com/zyantific/zydis"> Zydis - Zyantific Disassembler </a>. It is a disassembly library for C++ and Python. <br>
+                     * We had to learn about Opaque Predicates, which is also an exciting topic by itself. <br>
+                     * We still have further improvements on our project, which we plan to implement throughout next months. <br>
+                     
+                     By this point, our program can obfuscate basic C/C++ programs which are compiled with x86 architecture (in 32 bits). 
+
+
+                     
+
+
 
                     </p>
                 </div>
@@ -221,11 +233,13 @@ Reverse engineering of software can never be completely prevented, since a CPU w
           <li class="l-section section">
             <div class="contact">
               <div class="contact--lockup">
-                <div class="modal">
-                    <p>
+                <div class="modal" >
+                    <p style="width: 900px; height: 1500 px;">
 
-                     You can find out about us more down the links below.
-
+                    Here, you can find our YT video, which is a short demonstration of how Sazan32 works. <br><br><br>
+                    
+                    <iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4" title="Sazan32 Demo" 
+                    frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 
@@ -246,7 +260,7 @@ Reverse engineering of software can never be completely prevented, since a CPU w
     <li>Development</li>
     <li>Our Advisor</li>
     <li>Team</li>
-    <li>About Us</li>
+    <li>Watch Our Demo</li>
 
   </ul>
 </div>

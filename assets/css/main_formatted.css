@@ -575,7 +575,7 @@ body {
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    list-style-position: inside;
+    /*list-style-position: inside;*/
     z-index: 10
 }
 
@@ -625,6 +625,10 @@ body {
 
 .side-nav li:nth-child(5)::before {
     content: "05"
+}
+
+.side-nav li:nth-child(6)::before{
+    content: "06"
 }
 
 .side-nav li.is-active {
